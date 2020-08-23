@@ -13,6 +13,9 @@
                 <div class="main-nav__logo__wrapper">
                     <img src="img/main-logo.png" alt="Rapture logo" class="main-nav__logo">
                 </div>
+                <div class="main-nav__toggle__wrapper">
+                    <button class="main-nav__toggle"><span></span></button>
+                </div>
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
                         <a href="#" class="site-list__link">Features</a>
@@ -29,10 +32,10 @@
                 </ul>
                 <ul class="main-nav__list user-list">
                     <li class="user-list__item">
-                        <a href="#" class="user-list__link">Login</a>
+                        <a href="#" class="user-list__link button">Login</a>
                     </li>
                     <li class="user-list__item">
-                        <a href="#" class="user-list__link">Get started</a>
+                        <a href="#" class="user-list__link button">Get started</a>
                     </li>
                 </ul>
             </nav>
@@ -42,7 +45,7 @@
 
     <main class="page-main">
         <div class="page-main__main-wrapper">
-            <img src="img/main-bg.jpg" alt="" class="page-main__bg-photo">
+            <!-- <img src="img/main-bg.jpg" alt="" class="page-main__bg-photo"> -->
             <header class="page-main__header main-header">
                 <div class="main-header__wrapper">
                     <h1 class="main-header__title">Every Great Business<br>
@@ -54,7 +57,7 @@
                 </div>
                 <div class="main-header__descr__wrapper">
                     <p class="main-header__descr">The Rapture Startup is the one platform you need to build the business you’ve always dreamed of</p>
-                    <div class="main-header__icon"></div>
+                    <div class="main-header__icon"><span></span></div>
                 </div>
             </header>
 
@@ -74,12 +77,15 @@
                     </li>
                 </ul>
                 <div class="page-main__nav__email-subscr email-subscr">
-                    <p class="email-subscr__descr"></p>
+                    <p class="email-subscr__descr">Stay in Touch</p>
                     <div class="email-subscr__btn__wrapper">
-                        <input type="text" class="email-subscr__user-email" placeholder="Subscribe our newsletters"><button class="email-subscr__btn">Submit</button>
+                        <input type="email" class="email-subscr__user-email" placeholder="Subscribe our newsletters" required>
+                        <button type="submit" class="email-subscr__btn">Submit</button>
                     </div>
                 </div>
             </div>
+
+            <hr>
 
             <section class="page-main__sale sale">
                 <div class="sale__wrapper">
@@ -91,15 +97,17 @@
                 </div>
                 <div class="sale__descr__main-wrapper">
                     <div class="sale__descr__wrapper">
-                        <h4 class="sale__descr__wrapper">Accept payment</h4>
+                        <h4 class="sale__descr__title">Accept payment</h4>
                         <p class="sale__descr">After we automatically calculate taxes based on your location you’re ready to accept payment, no third-party payment gateway or merchant account required.</p>
                     </div>
                     <div class="sale__descr__wrapper">
-                        <h4 class="sale__descr__wrapper">Email receipt</h4>
+                        <h4 class="sale__descr__title">Email receipt</h4>
                         <p class="sale__descr">Don’t worry about printers or hand-writing receipts. Email customizable receipts with added info like promotions or policies.</p>
                     </div>
                 </div>
             </section>
+
+            <hr>
 
             <section class="page-main__components components">
                 <div class="components__title__wrapper">
@@ -436,5 +444,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main-nav.js"></script>
 </body>
 </html>

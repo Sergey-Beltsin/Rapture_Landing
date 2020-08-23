@@ -1,0 +1,18 @@
+.site-list__item {
+    margin-bottom: 5px;
+}
+
+.site-list__link {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    text-align: right;
+    text-decoration: none;
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+        color: #ffffff;
+    }
+}

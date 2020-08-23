@@ -25,6 +25,15 @@
     src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff");
 }
 
+@font-face {
+    font-weight: 500;
+    font-family: "Raleway";
+    font-style: normal;
+    font-display: swap;
+    
+    src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -34,7 +43,20 @@ body {
     padding: 0;
     margin: 0;
 
+    color: #222328;
     font-family: "Raleway", Arial, sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+button {
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+hr {
+    height: 1px;
+    
+    border: none;
+    opacity: 0.1;
+    background-color: #141414
 }

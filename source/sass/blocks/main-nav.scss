@@ -1,0 +1,138 @@
+.main-nav {
+    top: 0;
+    position: absolute;
+    z-index: 2;
+
+    width: 100%;
+    height: 30px;
+    padding-right: 20px;
+
+    transition: 0.3s ease-out;
+}
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.5s ease-out;
+}
+
+.main-nav--active {
+    padding-bottom: 200%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.8);
+
+    transition: 0.3s ease-out;
+}
+
+.main-nav--active .main-nav__list {
+    opacity: 1;
+
+    &:last-child {
+        padding-bottom: 100%;
+    }
+}
+
+.main-nav__logo__wrapper {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 10px;
+}
+
+
+.main-nav__toggle__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.main-nav__toggle {
+    width: 45px;
+    height: 35px;
+    margin-top: -32px;
+    margin-bottom: 10px;
+
+    position: relative;
+    z-index: 3;
+    top: 6px;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+
+    transition: 0.1s ease-out;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.main-nav__toggle span {
+    width: 22px;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 0px;
+    left: 3px;
+    border-radius: 1px;
+
+    background-color: #ffffff;
+
+    transition: background 0.2s ease-out;
+
+    &::after,
+    &::before {
+        content: " ";
+
+        width: 22px;
+        height: 2px;
+
+        position: absolute;
+        left: 0;
+        
+        border-radius: 1px;
+
+        background-color: #ffffff;
+
+        transition: top 0.3s 0.4s, transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    &::after {
+        top: -6px;
+    }
+
+    &::before {
+        top: 6px;
+    }
+}
+
+.main-nav--active .main-nav__toggle {
+    & span {
+        background: 0 0;
+
+        &::after {
+            top: 0;
+            transform: rotate(45deg);
+        }
+    
+        &::before {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        &::after,
+        &::before {
+            transition: top 0.3s, transform 0.3s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    }
+}

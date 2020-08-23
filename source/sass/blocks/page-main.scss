@@ -1,0 +1,42 @@
+.page-main__header {
+    height: 400px;
+    background-image: url(../../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-main {
+    margin-top: -40px;
+}
+
+.page-main__title {
+    margin-top: 40px;
+}
+
+.page-main__nav {
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.page-main__nav__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.page-main__nav__link {
+    display: block;
+    margin-top: 10px;
+
+    color: #222328;
+    font-size: 14px;
+    text-decoration: none;
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

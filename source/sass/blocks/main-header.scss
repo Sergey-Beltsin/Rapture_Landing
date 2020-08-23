@@ -1,0 +1,101 @@
+.main-header {
+    width: 100%;
+}
+
+.main-header__wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.main-header__title {
+    margin-top: 40px;
+    padding-top: 40px;
+
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-header__btn {
+    display: block;
+    width: 275px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+        
+    }
+
+    &:active {
+        opacity: 0.5;
+        transition: none;
+    }
+}
+
+.main-header__btn__link {
+    text-decoration: none;
+}
+
+.main-header__link {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    text-align: center;
+}
+
+.main-header__descr__wrapper {
+    width: 95%;
+    margin: 0 auto;
+
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-header__icon {
+    width: 24px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    border-radius: 12px;
+    border: solid 2px rgba(255, 255, 255, 0.1);
+
+    & span {
+        display: block;
+        width: 2px;
+        height: 8px;
+        margin: 0 auto;
+
+        animation: wheelchair 2s infinite;
+
+        background-color: #ffffff;
+    }
+}
+
+@keyframes wheelchair {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        translate: 0 30px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
