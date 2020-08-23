@@ -1,0 +1,27 @@
+.features__wrapper {
+    padding: 20px;
+    margin-bottom: 35px;
+
+    border-radius: 10px;
+    border: solid 1px rgba(20, 20, 20, 0.1);
+
+    &:first-child {
+        margin-top: 100px;
+    }
+}
+
+.features__title {
+    color: #141414;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.86;
+    letter-spacing: 1.4px;
+}
+
+.features__descr {
+    color: #141414;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.56;
+}

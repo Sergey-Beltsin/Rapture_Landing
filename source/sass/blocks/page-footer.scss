@@ -1,0 +1,39 @@
+.page-footer {
+    position: relative;
+
+    background-color: #141414;
+
+    color: #ffffff;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: -10px;
+
+        background-color: rgba(255, 255, 255, 0.1);
+        height: 1px;
+        width: 100%;
+    }
+}
+
+.page-footer__wrapper {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.page-footer__line {
+    position: relative;
+
+    &::before {
+        content: '';
+
+        height: 1px;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}

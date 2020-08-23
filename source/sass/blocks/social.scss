@@ -1,0 +1,27 @@
+.social__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 20px;
+}
+
+.social__item {
+    margin: 0 auto;
+}
+
+.social__item:nth-child(2) .social__link svg {
+    position: relative;
+    top: -5px;
+}
+
+.social__link {
+    opacity: 0.5;
+
+    color: #ffffff;
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}

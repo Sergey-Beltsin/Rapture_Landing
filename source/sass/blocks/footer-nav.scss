@@ -1,0 +1,35 @@
+.footer-nav__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-nav__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 1.8px;
+}
+
+.footer-nav__title:first-child {
+    padding-top: 30px;
+}
+
+.footer-nav__link {
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 2.86;
+    color: rgba(255, 255, 255, 0.45);
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}

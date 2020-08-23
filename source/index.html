@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div style="display: none;">
+        <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
         <div class="page-header__main-wrapper">
             <nav class="main-nav">
@@ -213,9 +218,9 @@
                         </div>
                     </div>
                     <div class="create-site__main-features main-features">
-                        <div class="main-features__title__wrapper">
-                            <h3 class="main-features__title">All the power of Rapture</h3>
-                            <p class="main-features__title__descr">The world’s fastest-growing startup framework</p>
+                        <div class="main-features__main-title__wrapper">
+                            <h3 class="main-features__main-title">All the power of Rapture</h3>
+                            <p class="main-features__main-title__descr">The world’s fastest-growing startup framework</p>
                         </div>
                         <div class="main-features__main-wrapper">
                             <div class="main-features__wrapper">
@@ -252,24 +257,30 @@
                             <a href="#" class="main-features__to-all__link">View All features</a>
                         </div>
                     </div>
-                    <div class="create-site__footer-title__wrapper">
-                        <h3 class="create-site__footer-title">Create your Awesome Site</h3>
-                        <p class="create-site__footer-title__descr">Get access and download all the content blocks and templates for Sketch or Photoshop.</p>
-                        <a href="#" class="create-site__footer-title__link button">Start Your free Trial</a>
-                    </div>
                 </div>
             </section>
 
             <section class="page-main__getting-started getting-started">
-                <div class="getting-started__wrapper">
-                    <p class="getting-started__descr">How to get started selling in person</p>
-                    <h3 class="getting-started__title">The Ultimate Guide to Pop-Up Shops</h3>
-                    <a href="#" class="getting-started__link button">Read The Guide</a>
+                <div class="getting-started__main-title__wrapper">
+                    <h3 class="getting-started__main-title">Create your Awesome Site</h3>
+                    <p class="getting-started__main-title__descr">Get access and download all the content blocks and templates for Sketch or Photoshop.</p>
+                    <a href="#" class="getting-started__main-title__link">Start Your free Trial</a>
                 </div>
-                <div class="getting-started__wrapper">
-                    <p class="getting-started__descr">Upgrade rapture to easily sell in-store</p>
-                    <h3 class="getting-started__title">The Rapture Startup for Retail</h3>
-                    <a href="#" class="getting-started__link button">View Retail Package</a>
+                <div class="getting-started__main-wrapper">
+                    <div class="getting-started__wrapper">
+                        <div class="getting-started__tech-wrapper">
+                            <p class="getting-started__descr">How to get started selling in person</p>
+                            <h3 class="getting-started__title">The Ultimate Guide to Pop-Up Shops</h3>
+                            <a href="#" class="getting-started__link button">Read The Guide</a>
+                        </div>
+                    </div>
+                    <div class="getting-started__wrapper">
+                        <div class="getting-started__tech-wrapper">
+                            <p class="getting-started__descr">Upgrade rapture to easily sell in-store</p>
+                            <h3 class="getting-started__title">The Rapture Startup for Retail</h3>
+                            <a href="#" class="getting-started__link button">View Retail Package</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -297,8 +308,6 @@
             </div>
         </div>
     </main>
-
-    <hr>
 
     <footer class="page-footer">
         <div class="page-footer__wrapper">
@@ -402,24 +411,24 @@
                     </ul>
                 </div>
                 <div class="footer-nav__wrapper">
-                    <h4 class="footer-nav__title"></h4>
-                    <ul class="footer-nav__list">
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
+                    <h4 class="footer-nav__title">Social Networks</h4>
+                    <ul class="footer-nav__list social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
                                 <svg width="17px" height="14px">
                                     <use xlink:href="#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                <svg width="9px" height="18px">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg width="25px" height="30px">
                                     <use xlink:href="#icon-fb"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
                                 <svg width="24px" height="15px">
                                     <use xlink:href="#icon-gplus"></use>
                                 </svg>
@@ -429,17 +438,17 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <div class="page-footer__line"></div>
         <div class="page-footer__wrapper">
             <div class="page-footer__copyright copyright">
                 <div class="copyright__wrapper">
-                    <p class="copyright__created-by">Created with <img src="img/icons/heart-icon.png" alt=""> by <img src="img/icons/footer-by_icon.png" alt=""></p>
+                    <p class="copyright__created-by">Created with <img src="img/icons/heart-icon.png" alt=""> by <img class="copyright__created-by__img" src="img/icons/footer-by_icon.png" alt=""></p>
                 </div>
                 <div class="copyright__wrapper">
-                    All Rights Reserved. <a href="http://getcraftwork.com">http://getcraftwork.com</a>
+                    All Rights Reserved. <a class="copyright__link" href="http://getcraftwork.com">http://getcraftwork.com</a>
                 </div>
                 <div class="copyright__wrapper">
-                    Powered by <img src="img/main-logo.png" alt="">
+                    Powered by <img class="copyright__logo" src="img/main-logo.png" alt="">
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@
 
 .page-main__nav {
     display: grid;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -38,5 +38,41 @@
 
     &:hover {
         opacity: 0.5;
+    }
+}
+
+.page-main__links {
+    padding-bottom: 30px;
+
+    background-color: #141414;
+}
+
+.page-main__links__list {
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+
+    list-style: none;
+}
+
+.page-main__links__item {
+    margin-bottom: 5px;
+}
+
+.page-main__links__link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:active {
+        transition: none;
+        opacity: 0.3;
     }
 }
