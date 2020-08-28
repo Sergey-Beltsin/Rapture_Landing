@@ -12,12 +12,48 @@
             navList.forEach(item => {
                 item.style.visibility = 'visible';
             });
+            document.querySelectorAll('.main-nav__item').forEach(item => {
+                item.style.opacity = '1';
+            });
         } else {
             nav.classList.remove('main-nav--active');
             document.querySelector('body').style.overflow = 'auto';
             navList.forEach(item => {
                 item.style.visibility = 'hidden';
             });
+            document.querySelectorAll('.main-nav__item').forEach(item => {
+                item.style.opacity = '0';
+            });
         }
     });
+
+    if (window.innerWidth > 768) {
+        document.querySelectorAll('.main-nav__item').forEach(item => {
+            item.style.opacity = '1';
+        });
+    } else {
+        document.querySelectorAll('.main-nav__item').forEach(item => {
+            item.style.opacity = '0';
+        });
+    }
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navList.forEach(item => {
+                item.style.visibility = 'visible';
+            });
+            nav.classList.remove('main-nav--active');
+            document.querySelector('body').style.overflow = 'auto';
+            document.querySelectorAll('.main-nav__item').forEach(item => {
+                item.style.opacity = '1';
+            });
+        } else {
+            navList.forEach(item => {
+                item.style.visibility = 'hidden';
+            });
+            document.querySelectorAll('.main-nav__item').forEach(item => {
+                item.style.opacity = '0';
+            });
+        }
+    })
 })();

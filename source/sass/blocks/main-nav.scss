@@ -1,3 +1,5 @@
+$menuItems: 6;
+
 .main-nav {
     top: 0;
     position: absolute;
@@ -5,36 +7,48 @@
 
     width: 100%;
     height: 30px;
-    padding-right: 20px;
 
-    transition: 0.3s ease-out;
+    transition: 0.8s ease-out;
 }
 
 .main-nav__list {
     margin: 0;
     padding: 0;
-    padding-right: 20px;
 
     list-style: none;
-    opacity: 0;
+    padding-right: 20px;
     visibility: hidden;
-
-    transition: 0.5s ease-out;
-}
-
-.main-nav--active {
-    padding-bottom: 200%;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.8);
 
     transition: 0.3s ease-out;
 }
 
-.main-nav--active .main-nav__list {
-    opacity: 1;
+.main-nav__item {
+    transform: scale(0.7);
+    opacity: 0;
 
-    &:last-child {
-        padding-bottom: 100%;
+    transition: 0.4s ease-out;
+    @for $i from 1 through $menuItems {
+        &:nth-child(#{$i}) {
+            transition-delay: #{0.56 - ($i * 0.07)}s;
+        }
+    }
+}
+
+.main-nav--active {
+    padding-bottom: 200%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.8);
+
+    transition: 0.8s ease-out;
+}
+
+.main-nav--active .main-nav__item {
+    transform: scale(1);
+    opacity: 1;
+    @for $i from 1 through $menuItems {
+        &:nth-child(#{$i}) {
+            transition-delay: #{0.07 * $i+0.2}s;
+        }
     }
 }
 
@@ -57,6 +71,7 @@
     height: 35px;
     margin-top: -32px;
     margin-bottom: 10px;
+    padding: 0;
 
     position: relative;
     z-index: 3;
@@ -134,5 +149,37 @@
         &::before {
             transition: top 0.3s, transform 0.3s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
         }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .main-nav {
+        display: grid;
+        grid-template-columns: 190px 1fr 270px;
+        align-items: flex-start;
+
+        width: 85%;
+        max-width: 1170px;
+        margin: 0 auto;
+        margin-top: 75px;
+
+        position: relative;
+    }
+
+    .main-nav__logo__wrapper {
+        padding-top: 5px;
+    }
+
+    .main-nav__logo {
+        width: 100%;
+    }
+    
+    .main-nav__toggle__wrapper {
+        display: none;
+    }
+
+    .main-nav__list {
+        visibility: visible;
+        opacity: 1;
     }
 }

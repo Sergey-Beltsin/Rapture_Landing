@@ -33,3 +33,22 @@
         color: rgba(255, 255, 255, 1);
     }
 }
+
+@media (min-width: $tablet-width) {
+    .footer-nav__main-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-nav__wrapper:first-child {
+        width: 100%;
+    }
+
+    .footer-nav__wrapper:first-child .footer-nav__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        max-height: 250px;
+    }
+}

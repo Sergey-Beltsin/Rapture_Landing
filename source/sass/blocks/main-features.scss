@@ -39,13 +39,20 @@
 }
 
 .main-features__title {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
     font-size: 14px;
     font-weight: 500;
+    text-transform: uppercase;
     line-height: 1.63;
     letter-spacing: 1.6px;
 }
 
 .main-features__title__descr {
+    margin: 0;
+
     color: #8c8f94;
     font-size: 14px;
     font-weight: 300;
@@ -89,5 +96,39 @@
     &:active {
         transition: none;
         opacity: 0.2;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .main-features__main-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .main-features__main-title {
+        font-size: 52px;
+        margin-bottom: 0;
+    }
+
+    .main-features__main-title__descr {
+        font-size: 22px;
+    }
+
+    .main-features__title {
+        margin-bottom: 25px;
+
+        font-size: 16px;
+    }
+
+    .main-features__title__descr {
+        font-size: 18px;
+    }
+
+    .main-features__to-all__descr {
+        margin-bottom: 20px;
+    }
+
+    .main-features__to-all__link {
+        width: 230px;
+        margin-bottom: 50px;
     }
 }

@@ -13,6 +13,7 @@
     font-size: 14px;
     font-weight: 500;
     text-align: center;
+    text-transform: uppercase;
     line-height: 1.86;
     letter-spacing: 1.4px;
 }
@@ -25,4 +26,36 @@
     font-weight: 300;
     line-height: 1.24;
     letter-spacing: normal;
+}
+
+@media (min-width: $tablet-width) {
+    .components__title {
+        font-size: 14px;
+    }
+
+    .components__main-title {
+        font-size: 42px;
+        font-weight: 300;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .components {
+        margin-top: 111px;
+    }
+
+    .components__title__wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .components__title {
+        margin-bottom: 25px;
+    }
+
+    .components__main-title {
+        margin-bottom: 76px;
+
+        letter-spacing: -0.5px;
+    }
 }

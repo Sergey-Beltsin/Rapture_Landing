@@ -87,6 +87,7 @@
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
     font-weight: 600;
+    text-transform: uppercase;
     line-height: 2;
     letter-spacing: 1.8px;
 }
@@ -105,10 +106,6 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-
-// .getting-started__wrapper:first-child .getting-started__link {
-//     margin-bottom: 25.5%;
-// }
 
 .getting-started__link {
     display: flex;
@@ -131,5 +128,34 @@
 
     &:hover {
         background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .getting-started__main-title {
+        font-size: 42px;
+    }
+
+    .getting-started__main-title__descr {
+        margin-bottom: 50px;
+
+        font-size: 18px;
+    }
+
+    .getting-started__main-title__link {
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .getting-started__title {
+        font-size: 42px;
+    }
+
+    .getting-started__wrapper:first-child .getting-started__link {
+        width: 200px;
+    }
+
+    .getting-started__wrapper:last-child .getting-started__link {
+        width: 250px;
     }
 }

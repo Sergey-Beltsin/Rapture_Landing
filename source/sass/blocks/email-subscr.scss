@@ -15,7 +15,7 @@
 .email-subscr__user-email {
     border: none;
     margin-left: 5px;
-    width: 150px;
+    width: 100%;
 }
 
 .email-subscr__btn {
@@ -23,6 +23,7 @@
     height: 36px;
     padding: 0;
     margin-right: 8px;
+    margin-left: 10px;
 
     cursor: pointer;
     border: none;
@@ -48,4 +49,37 @@
 
     text-align: center;
     font-weight: 500;
+}
+
+@media (min-width: $tablet-width) {
+    .email-subscr {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .email-subscr__btn__wrapper {
+        max-width: 370px;
+    }
+
+    .email-subscr__user-email {
+        margin-left: 25px;
+    }
+
+    .email-subscr__btn {
+        width: 45%;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .email-subscr {
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+        top: 7px;
+    }
+
+    .email-subscr__btn__wrapper {
+        margin: 0;
+    }
 }

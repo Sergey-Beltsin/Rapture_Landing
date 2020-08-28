@@ -16,3 +16,20 @@
         color: #ffffff;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .site-list {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        width: 100%;
+        max-width: 305px;
+        height: 100%;
+        margin-left: 25px;
+    }
+
+    .site-list__link {
+        font-size: 24px;
+    }
+}

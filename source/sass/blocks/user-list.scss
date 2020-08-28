@@ -1,25 +1,13 @@
-.user-list__link {
+.user-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 36px;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 1.1px;
-    border-radius: 18px;
-    border: solid 1px rgba(255, 255, 255, 0.1);
+.user-list__item {
+    flex-shrink: 0;
 
-    transition: 0.2s ease-out;
-
-    &:hover {
-        color: #000000;
-        background-color: rgba(255, 255, 255, 0.7);
-    }
+    margin-bottom: 10px;
 }
 
 .user-list__item:last-child .user-list__link {
@@ -33,12 +21,71 @@
     }
 }
 
-.user-list__item {
-    margin-bottom: 10px;
+.user-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 36px;
+
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    border-radius: 18px;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
 }
 
-.user-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+@media (min-width: $tablet-width) {
+    .user-list {
+        max-height: 30px;
+
+        padding: 0;
+        margin-left: 14px;
+    }
+
+    .user-list__item {
+        margin: 0;
+    }
+
+    .user-list__link {
+        height: 50px;
+
+        position: relative;
+        top: 14px;
+
+        border-radius: 30px;
+
+        font-size: 16px;
+    }
+
+    .user-list__item:first-child .user-list__link {
+        width: 125px;
+        margin-top: -17px;
+    }
+
+    .user-list__item:last-child .user-list__link {
+        width: 180px;
+        margin-left: -30px;
+    }
+}
+
+@media (min-width: 950px) {
+    .user-list {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
 }

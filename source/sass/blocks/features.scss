@@ -25,3 +25,18 @@
     font-weight: 300;
     line-height: 1.56;
 }
+
+.features__slider__img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+    .features__title {
+        font-size: 14px;
+    }
+
+    .features__descr {
+        font-size: 18px;
+    }
+}

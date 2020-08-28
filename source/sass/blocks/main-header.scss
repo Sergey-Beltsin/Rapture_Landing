@@ -4,28 +4,37 @@
 
 .main-header__wrapper {
     width: 95%;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
 .main-header__title {
     margin-top: 40px;
-    padding-top: 40px;
+    padding-top: 60px;
 
     color: #ffffff;
     font-size: 24px;
     font-weight: 300;
     text-align: center;
+    letter-spacing: -1px;
+
+    transition: 0.2s ease-out;
 }
 
 .main-header__btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     height: 40px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 15px;
 
+    color: #141414;
+    font-size: 14px;
     font-weight: 500;
+    text-decoration: none;
     border-radius: 30px;
     border: none;
     cursor: pointer;
@@ -34,18 +43,10 @@
 
     transition: 0.2s ease-out;
 
-    &:hover {
-        
-    }
-
     &:active {
         opacity: 0.5;
         transition: none;
     }
-}
-
-.main-header__btn__link {
-    text-decoration: none;
 }
 
 .main-header__link {
@@ -59,10 +60,19 @@
 .main-header__descr__wrapper {
     width: 95%;
     margin: 0 auto;
+    margin-top: 50px;
+}
 
+.main-header__descr {
     color: #ffffff;
     font-size: 18px;
     text-align: center;
+    line-height: 1.38;
+    letter-spacing: -0.2px;
+
+    & br {
+        display: none;
+    }
 }
 
 .main-header__icon {
@@ -71,7 +81,7 @@
     margin: 0 auto;
     margin-top: 25px;
 
-    border-radius: 12px;
+    border-radius: 20px;
     border: solid 2px rgba(255, 255, 255, 0.1);
 
     & span {
@@ -92,10 +102,56 @@
     }
 
     90% {
-        translate: 0 30px;
+        transform: translateY(30px);
     }
 
     100% {
         opacity: 0;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .main-header__title {
+        margin-top: 0;
+        margin-bottom: 80px;
+        padding-top: 220px;
+
+        font-size: 48px;
+    }
+
+    .main-header__btn {
+        width: 390px;
+        height: 60px;
+        margin-bottom: 27px;
+
+        letter-spacing: 1.4px;
+    }
+    
+    .main-header__descr__wrapper {
+        margin-top: 95px;
+    }
+
+    .main-header__icon {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-header__title {
+        padding-top: 257px;
+
+        font-size: 62px;
+    }
+
+    .main-header__descr__wrapper {
+        margin-top: 90px;
+    }
+
+    .main-header__descr {
+        font-size: 26px;
+
+        & br {
+            display: block;
+        }
     }
 }
