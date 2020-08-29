@@ -159,3 +159,52 @@
         width: 250px;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .getting-started {
+        margin-top: 95px;
+    }
+
+    .getting-started__main-title {
+        margin-bottom: 22px;
+
+        letter-spacing: -0.7px;
+    }
+
+    .getting-started__main-title__descr {
+        width: 550px;
+        margin: 0 auto;
+        margin-bottom: 46px;
+    }
+
+    .getting-started__main-title__link {
+        margin-bottom: 115px;
+    }
+
+    .getting-started__main-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .getting-started__tech-wrapper {
+        width: 71%;
+    }
+
+    .getting-started__wrapper:first-child .getting-started__tech-wrapper {
+        width: 55%;
+        padding-left: 60px;
+    }
+
+    .getting-started__descr {
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    .getting-started__wrapper:last-child .getting-started__title {
+        width: 450px;
+    }
+
+    .getting-started__title {
+        padding-bottom: 10px;
+    }
+}

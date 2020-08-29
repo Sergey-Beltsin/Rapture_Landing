@@ -14,6 +14,8 @@
 }
 
 .main-features__main-title {
+    margin: 0;
+
     font-size: 32px;
     font-weight: 300;
     text-align: center;
@@ -35,7 +37,15 @@
 
 .main-features__wrapper {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 80px 1fr;
+}
+
+.main-features__icon {
+    margin: 0 auto;
+}
+
+.main-features__tech-wrapper {
+    margin-left: 15px;
 }
 
 .main-features__title {
@@ -106,7 +116,6 @@
 
     .main-features__main-title {
         font-size: 52px;
-        margin-bottom: 0;
     }
 
     .main-features__main-title__descr {
@@ -130,5 +139,44 @@
     .main-features__to-all__link {
         width: 230px;
         margin-bottom: 50px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-features {
+        width: 1150px;
+        margin: 0 auto;
+    }
+
+    .main-features__main-title__wrapper {
+        margin-top: 75px;
+    }
+
+    .main-features__main-title {
+        letter-spacing: -0.7px;
+    }
+
+    .main-features__main-title__descr {
+        margin: 0;
+        margin-top: 23px;
+        margin-bottom: 80px;
+        margin-left: -8px;
+    }
+
+    .main-features__main-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        width: 84%;
+        margin-bottom: 80px;
+    }
+
+    .main-features__to-all__descr {
+        margin-bottom: 27px;
+    }
+
+    .main-features__to-all__link {
+        margin-bottom: 78px;
     }
 }
